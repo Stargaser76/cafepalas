@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Dishes</title>
+
+    <style>
+        
+        .menu {background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkHokpUl7PAe1-FAxKMcLpYdDXTr31RhgVTrzRqKRhgZStnx9GRRSfn6D_nRd15BbwLftyH6P_8rNCRiyBCm93i0oAp-TniRJ8P86wix_EWCHAeL6Xv7Gs3625kmQvGQEkzNHmHmNIt-6IfAwuRkjsGTg-YYi4nn16IT3T6K_fgDuVBst3xgCu97MeUBQP/s320/WhatsApp%20Image%202024-09-19%20%C3%A0%2020.24.27_dd5b451d.jpg);
+            background-size: cover;
+            padding: 20px;
+            border: solid 2px yellow;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center; 
+            position: fixed;
+            width: 96%;
+            top: 0; 
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 0 15px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #000;
+            font-family: cursive;
+        }
+
+        /* Hover and active styles */
+        .menu a {
+            color: black;
+        }
+
+        .menu a.active {
+            color: red;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 80px; 
+        }
+
+       
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            
+        }
+
+        .card {
+            background-color: #f5f5f5;
+            border: 2px double yellow;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .card:hover{background: yellow;
+        border: solid 2px black;
+        transition: 1s;}
+
+        .double-5 {
+        background:
+          linear-gradient(blue 0 0) 0 100% / var(--d, 0) 4px no-repeat, 
+          linear-gradient(white 0 0) 50% 100% / var(--d, 0) 4px no-repeat,  
+          linear-gradient(red 0 0) 100% 100% / var(--d, 0) 4px no-repeat;  
+        transition: 0.5s;
+    }
+      
+      .double-5:hover {
+        --d: 51%;
+      }
+    </style>
+
+</head>
+<body>
+    <center>
+        <div class="menu">
+            <ul>
+                <li><a class="double-5" href="#">Accueil</a></li>
+                <li><a class="double-5" href="#pizza">Pizza</a></li>
+                <li><a class="double-5" href="#tagine">Tagine</a></li>
+                <li><a class="double-5" href="#burger">Hamburger</a></li>
+                <li><a class="double-5" href="#tacos">Tacos</a></li>
+                <li><a class="double-5" href="#sushi">Sushi</a></li>
+            </ul>
+        </div>
+        </center>
+        
+        <center>
+            <div id="pizza" class="container"></div>
+            <h1 style="padding: 50px;">Nos Plats de Pizza les Plus Populaires</h1>
+            <div class="grid-container" style="width: 92%;">
+            
+                <div class="card">
+                    <img style="width: 190px; height: 190px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwVs0G2ro7TTrPB5tIyX7RSQDDP8P5yUoSG3PhJzFV9ZT82GMNjRl-nrta-vZsgy0tOSMydWaMfbSSmrB_6NdLzwkj9pLkTzxhLZLhh71-PWsJiEr8wnQ14pIrqLrtY1eC-EZuL4VtOLg4_Yusa0aEaa9s4S5zkd2DPbgkE3RdQ8nC3jcaUg3dLnIbs1Dp/s500/PIZZA-CU-TON-scaled-removebg-preview.png" alt="Pizza Margarita">
+                    <h3>Pizza Margarita</h3>
+                    <p class="price">30dh</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+            
+                <div class="card">
+                    <img style="width: 190px; height: 190px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwVs0G2ro7TTrPB5tIyX7RSQDDP8P5yUoSG3PhJzFV9ZT82GMNjRl-nrta-vZsgy0tOSMydWaMfbSSmrB_6NdLzwkj9pLkTzxhLZLhh71-PWsJiEr8wnQ14pIrqLrtY1eC-EZuL4VtOLg4_Yusa0aEaa9s4S5zkd2DPbgkE3RdQ8nC3jcaUg3dLnIbs1Dp/s500/PIZZA-CU-TON-scaled-removebg-preview.png" alt="Pâtes Salées aux Champignons">
+                    <h3>Pâtes Salées avec Sauce aux Champignons</h3>
+                    <p class="price"><span class="sale-price">$2.60</span> $2.49</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+            
+                <div class="card">
+                    <img style="width: 190px; height: 190px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwVs0G2ro7TTrPB5tIyX7RSQDDP8P5yUoSG3PhJzFV9ZT82GMNjRl-nrta-vZsgy0tOSMydWaMfbSSmrB_6NdLzwkj9pLkTzxhLZLhh71-PWsJiEr8wnQ14pIrqLrtY1eC-EZuL4VtOLg4_Yusa0aEaa9s4S5zkd2DPbgkE3RdQ8nC3jcaUg3dLnIbs1Dp/s500/PIZZA-CU-TON-scaled-removebg-preview.png" alt="Soupe de Raviolis au Bœuf">
+                    <h3>Raviolis au Bœuf dans une Soupe Piquante et Aigre</h3>
+                    <p class="price">$4.29</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+            
+                <div class="card">
+                    <img style="width: 190px; height: 190px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwVs0G2ro7TTrPB5tIyX7RSQDDP8P5yUoSG3PhJzFV9ZT82GMNjRl-nrta-vZsgy0tOSMydWaMfbSSmrB_6NdLzwkj9pLkTzxhLZLhh71-PWsJiEr8wnQ14pIrqLrtY1eC-EZuL4VtOLg4_Yusa0aEaa9s4S5zkd2DPbgkE3RdQ8nC3jcaUg3dLnIbs1Dp/s500/PIZZA-CU-TON-scaled-removebg-preview.png" alt="Soupe de Pâtes au Poulet">
+                    <h3>Pâtes au Poulet dans une Soupe Piquante et Aigre</h3>
+                    <p class="price">$1.59</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+            
+                <div class="card">
+                    <img style="width: 190px; height: 190px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwVs0G2ro7TTrPB5tIyX7RSQDDP8P5yUoSG3PhJzFV9ZT82GMNjRl-nrta-vZsgy0tOSMydWaMfbSSmrB_6NdLzwkj9pLkTzxhLZLhh71-PWsJiEr8wnQ14pIrqLrtY1eC-EZuL4VtOLg4_Yusa0aEaa9s4S5zkd2DPbgkE3RdQ8nC3jcaUg3dLnIbs1Dp/s500/PIZZA-CU-TON-scaled-removebg-preview.png" alt="Nouilles Saines">
+                    <h3>Nouilles Saines avec Feuilles d'Épinard</h3>
+                    <p class="price">$5.29</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+            
+                <div class="card">
+                    <img style="width: 190px; height: 190px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwVs0G2ro7TTrPB5tIyX7RSQDDP8P5yUoSG3PhJzFV9ZT82GMNjRl-nrta-vZsgy0tOSMydWaMfbSSmrB_6NdLzwkj9pLkTzxhLZLhh71-PWsJiEr8wnQ14pIrqLrtY1eC-EZuL4VtOLg4_Yusa0aEaa9s4S5zkd2DPbgkE3RdQ8nC3jcaUg3dLnIbs1Dp/s500/PIZZA-CU-TON-scaled-removebg-preview.png" alt="Riz Frit">
+                    <h3>Riz Frit Épicé avec Omelette</h3>
+                    <p class="price">$2.99</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+            
+                <div class="card">
+                    <img style="width: 190px; height: 190px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwVs0G2ro7TTrPB5tIyX7RSQDDP8P5yUoSG3PhJzFV9ZT82GMNjRl-nrta-vZsgy0tOSMydWaMfbSSmrB_6NdLzwkj9pLkTzxhLZLhh71-PWsJiEr8wnQ14pIrqLrtY1eC-EZuL4VtOLg4_Yusa0aEaa9s4S5zkd2DPbgkE3RdQ8nC3jcaUg3dLnIbs1Dp/s500/PIZZA-CU-TON-scaled-removebg-preview.png" alt="Nouilles aux Fruits de Mer">
+                    <h3>Nouilles Instantanées Épicées avec Omelette Spéciale</h3>
+                    <p class="price">$4.59</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+            
+                <div class="card">
+                    <img style="width: 190px; height: 190px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwVs0G2ro7TTrPB5tIyX7RSQDDP8P5yUoSG3PhJzFV9ZT82GMNjRl-nrta-vZsgy0tOSMydWaMfbSSmrB_6NdLzwkj9pLkTzxhLZLhh71-PWsJiEr8wnQ14pIrqLrtY1eC-EZuL4VtOLg4_Yusa0aEaa9s4S5zkd2DPbgkE3RdQ8nC3jcaUg3dLnIbs1Dp/s500/PIZZA-CU-TON-scaled-removebg-preview.png" alt="Nouilles Instantanées">
+                    <h3>Nouilles Instantanées Sautées avec Sauce Spéciale</h3>
+                    <p class="price">$3.29</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+            
+            </div>
+            
+            
+
+            <div id="tagine" class="container"></div>
+            <h1 style="padding-top: 100px;">Nos Plats de Tagine les Plus Populaires</h1>
+            <div class="grid-container" style="width: 92%;">
+            
+                <div class="card">
+                    <img style="width: 190px; height: 190px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHvyaY-Xlhbv7QHb7HaxPfqHeF3WcnQfbcJc8w7DGTjFjtwN6G1TGqprPxwTgvsXdOaCpHHlOmBdJY-4QlEch0s0oVtnRWZJCR8Eq-4R5JUPRfgtfdHs-znT6TYytUPj74PVYrKbhWViZjYP0PtEK5pxFjThgUjz9Z6XLGEVgONPWHGZkg1e1R.jpg" alt="Tagine au Poulet">
+                    <h3>Tagine au Poulet avec Citron Confit & Olives</h3>
+                    <p class="price">90 dh</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+                
+                <div class="card">
+                    <img style="width: 190px; height: 190px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDlW1JKK0llXHVGAGFviIJ1qupuuRUFCfZfliEKwNyRxcbfVqsXumfrCLO_JpAxLS6Z1WzFh5DPcKXe6iSyflDTIBTSBvhyUVvm6WpswIoFsVRCEDw29bMVApXExDCmEAX9fWZWGKoUvxkFNNwHbU3oH57pyQuuP6ZsKHb6Dx7A.jpg" alt="Tagine d'Agneau">
+                    <h3>Tagine d'Agneau aux Pruneaux & Amandes</h3>
+                    <p class="price">120 dh</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+               
+                <div class="card">
+                    <img style="width: 190px; height: 190px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMvAVZJhP5ljQ5gChfsP26ThXE8bIlpCFY5Mc_FaqEPm69rp9VJ2fFk8HQOZkrYggzXnxPBWYJMQdtcXu86tkDmyy9YRRX8puhJ58PC4_jweIC67WejrXQs-xjFxaBJK3xi11UXtOXiRAG00t_kvZ-LV3IQydyNSV4gsCVsfwqPA.jpg" alt="Tagine de Légumes">
+                    <h3>Tagine de Légumes avec Couscous</h3>
+                    <p class="price">70 dh</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+                
+                <div class="card">
+                    <img style="width: 190px; height: 190px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcbwKUNPq7oDTgS5HAYcDOO5mROlFa8LMmWiqoGgmlHQD82ZCXptmGVrFhgWhPBb-TGWd2M54ICJn4x5dOMRoeaXn4L-CZyzoazHTYqclZzNgNQbbBEAj9Nm-xi7Zm1qKrOTayGFSChMy5YRAxdDFQXjMVGN5HRogSYSkfJzRHEA.jpg" alt="Tagine de Poisson">
+                    <h3>Tagine de Poisson avec Sauce Chermoula</h3>
+                    <p class="price">85 dh</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+                
+                <div class="card">
+                    <img style="width: 190px; height: 190px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfuIQrNHF_EUMMCMvnKN7D6vZ8AYJzxHFVjpEmSVTpRmHdxRbl4btmdoGVlvMbGpiN1FiQURfaVMvFHcvFGceCkNZRIeZZ1dygUBVpH-xH6o-DAk8cLGYgx2PXYQlbqbmfDsgRsfwTbpN0qk_VzFKnTEmOeJtyo5bcz39vFwHCXw.jpg" alt="Tagine de Bœuf">
+                    <h3>Tagine de Bœuf avec Oignons Caramélisés</h3>
+                    <p class="price">110 dh</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+                
+                <div class="card">
+                    <img style="width: 190px; height: 190px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3KQmLrI7MdcDWdY-nMLMgsOR2yo6pEok7eR5KXGR2J6Om_qAqztTKURhLp7FJdfCD5MwRZ_zh6Ip9HYxeTjlTWMC7bmVEJvUt6LfjjeAaSm_ySLp6jokL8zJ7OjLNHW6pfBR1MtH4zqNf1EKtOFx_pZMxjPmWewfBgzGqEZWTwg.jpg" alt="Tagine d'Aubergines">
+                    <h3>Tagine d'Aubergines & Tomates</h3>
+                    <p class="price">65 dh</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+                
+                <div class="card">
+                    <img style="width: 190px; height: 190px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOkZhQ-rqKRHkWiRL9vmCnM3XniOGjTlVqpyvcEuqsDfwhOGTrLOpL-HgYexWgmBlYe4EsltaVigV_n9lDBdoYfiHDc8OOSQfPp68UIztdmx0GhZT-c6MRhMPS-xR9LbDrF-yENDBtZGk5jAw5yGQQGPY8On9t7Ilx90uG1TBapw.jpg" alt="Tagine de Kefta">
+                    <h3>Tagine de Kefta avec Oeufs</h3>
+                    <p class="price">95 dh</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+                
+                <div class="card">
+                    <img style="width: 190px; height: 190px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEfgwHQeFDTCy89qZ4XojxXMQuFXQsjm-jhr2M5jOFKYeDbPY8FXs4mMXuWQh9DKGvqrPey13j-Tt8U3lskze4td2V-1WfQufp4upKOzghcy6kVm5O5_Fo4TghcTEkKpDD8Z-EMMfZll-TsNk-OhjQQjUhuWGO3zrxNk1QxyOUxg.jpg" alt="Tagine de Foie de Veau">
+                    <h3>Tagine de Foie de Veau aux Épices</h3>
+                    <p class="price">100 dh</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+            
+            </div>
+            
+            <div id="burger" class="container">
+
+                <h1 style="padding-top: 100px;">Nos Plats de Hamburgers les Plus Populaires</h1>
+                <div class="grid-container">
+                   
+                    <div class="card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCgOSrkiAFBWapSLr3QbctXwUnccEWSUm98T3-y8ISSS-QJ2dAnv9U-AZwa0eSS1e_VhEQRvRDJVJWkzmXhC0uUd8Gr6za2vyyuIBcmRCsDyYw1m6HOQkwE30wl8TlSBGycCfWZ41OYq0FG6bFa7JayzTVxMUPpaYSwdaTKgOa-QtmKw-0HOPN8D24qbNZ/s500/Untitled_Project_" alt="Nouilles Épicées">
+                        <h3>Nouilles de fruits de mer épicées</h3>
+                        <p class="price">$2.29</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpTi5BU742fgXsYQlt3BNGhKUzcrJN7_ljVtNx4lyr-DxB4E9mLWrlm_kUtK6Uz2SqhqRhbxWJN0ir3JqH8nsRroCC0nGSRvbLzQG7-fSd5UvqipRhe-SdAq-7GSOZLKFZz8aWz8ymINuZ79p28XWIYA3ZwYUPTBwBwvQy01yDOKFDNSqdckRzC4Bu8NqD/s524/burger_beef-removebg-preview.png" alt="Pâtes aux Champignons">
+                        <h3>Pâtes salées avec sauce aux champignons</h3>
+                        <p class="price"><span class="sale-price">$2.60</span> $2.49</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                   
+                    <div class="card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCgOSrkiAFBWapSLr3QbctXwUnccEWSUm98T3-y8ISSS-QJ2dAnv9U-AZwa0eSS1e_VhEQRvRDJVJWkzmXhC0uUd8Gr6za2vyyuIBcmRCsDyYw1m6HOQkwE30wl8TlSBGycCfWZ41OYq0FG6bFa7JayzTVxMUPpaYSwdaTKgOa-QtmKw-0HOPN8D24qbNZ/s500/Untitled_Project_" alt="Soupe aux Raviolis de Bœuf">
+                        <h3>Raviolis de bœuf dans une soupe aigre-douce</h3>
+                        <p class="price">$4.29</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpTi5BU742fgXsYQlt3BNGhKUzcrJN7_ljVtNx4lyr-DxB4E9mLWrlm_kUtK6Uz2SqhqRhbxWJN0ir3JqH8nsRroCC0nGSRvbLzQG7-fSd5UvqipRhe-SdAq-7GSOZLKFZz8aWz8ymINuZ79p28XWIYA3ZwYUPTBwBwvQy01yDOKFDNSqdckRzC4Bu8NqD/s524/burger_beef-removebg-preview.png" alt="Soupe aux Pâtes au Poulet">
+                        <h3>Pâtes au poulet dans une soupe aigre-douce</h3>
+                        <p class="price">$1.59</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCgOSrkiAFBWapSLr3QbctXwUnccEWSUm98T3-y8ISSS-QJ2dAnv9U-AZwa0eSS1e_VhEQRvRDJVJWkzmXhC0uUd8Gr6za2vyyuIBcmRCsDyYw1m6HOQkwE30wl8TlSBGycCfWZ41OYq0FG6bFa7JayzTVxMUPpaYSwdaTKgOa-QtmKw-0HOPN8D24qbNZ/s500/Untitled_Project_" alt="Nouilles Saines">
+                        <h3>Nouilles saines avec feuilles d'épinards</h3>
+                        <p class="price">$5.29</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpTi5BU742fgXsYQlt3BNGhKUzcrJN7_ljVtNx4lyr-DxB4E9mLWrlm_kUtK6Uz2SqhqRhbxWJN0ir3JqH8nsRroCC0nGSRvbLzQG7-fSd5UvqipRhe-SdAq-7GSOZLKFZz8aWz8ymINuZ79p28XWIYA3ZwYUPTBwBwvQy01yDOKFDNSqdckRzC4Bu8NqD/s524/burger_beef-removebg-preview.png" alt="Riz Frit">
+                        <h3>Riz frit épicé avec omelette</h3>
+                        <p class="price">$2.99</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCgOSrkiAFBWapSLr3QbctXwUnccEWSUm98T3-y8ISSS-QJ2dAnv9U-AZwa0eSS1e_VhEQRvRDJVJWkzmXhC0uUd8Gr6za2vyyuIBcmRCsDyYw1m6HOQkwE30wl8TlSBGycCfWZ41OYq0FG6bFa7JayzTVxMUPpaYSwdaTKgOa-QtmKw-0HOPN8D24qbNZ/s500/Untitled_Project_" alt="Nouilles de Fruits de Mer">
+                        <h3>Nouilles instantanées épicées avec omelette spéciale</h3>
+                        <p class="price">$4.59</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpTi5BU742fgXsYQlt3BNGhKUzcrJN7_ljVtNx4lyr-DxB4E9mLWrlm_kUtK6Uz2SqhqRhbxWJN0ir3JqH8nsRroCC0nGSRvbLzQG7-fSd5UvqipRhe-SdAq-7GSOZLKFZz8aWz8ymINuZ79p28XWIYA3ZwYUPTBwBwvQy01yDOKFDNSqdckRzC4Bu8NqD/s524/burger_beef-removebg-preview.png" alt="Nouilles Instantanées">
+                        <h3>Nouilles instantanées sautées avec sauce spéciale</h3>
+                        <p class="price">$3.29</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+
+            <div id="tacos" class="container">
+
+                <h1 style="padding-top: 100px;">Nos Plats de Tacos les Plus Populaires</h1>
+                <div class="grid-container">
+                   
+                    <div class="card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDy9w7R1vsB7p7f4tnX2AyzeWk2weyah4lJa0l6qoKdqLw9oO59qmOctyn8BiHdmKMVMOHmnCJ1V2yYtkwi17DGosV19uty8IO4C9PiYoCdBYCGNJL-5fQbYA3C_iTqROcCnsc3zJtuBfPx8aL_OyPvrPt1vzSnGqHL9S9XGWLtPe9k9IEkC7JO3iQcBk4/s575/tacos_french-removebg-preview.png" alt="Nouilles Épicées">
+                        <h3>Nouilles de fruits de mer épicées</h3>
+                        <p class="price">$2.29</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYOlmUaEsSAmm0ZyhyphenhyphenM68l2rGxTSXstyTK-ko5j_zR6-92szwL5L-t7MiFcNPEGYup4e4RdguuwXfU0fROOKH2mad6UwtInJos3z1sdHKhyGJZI6r8SCejR6pt9-Xpk0-P0oZh3TbGsLPTdTSMf5j7Rl_grolAC1hjTfdDOeJS5C7sx5LDtqvzbn9baHHV/s660/tacos.png" alt="Pâtes aux Champignons">
+                        <h3>Pâtes salées avec sauce aux champignons</h3>
+                        <p class="price"><span class="sale-price">$2.60</span> $2.49</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                   
+                    <div class="card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDy9w7R1vsB7p7f4tnX2AyzeWk2weyah4lJa0l6qoKdqLw9oO59qmOctyn8BiHdmKMVMOHmnCJ1V2yYtkwi17DGosV19uty8IO4C9PiYoCdBYCGNJL-5fQbYA3C_iTqROcCnsc3zJtuBfPx8aL_OyPvrPt1vzSnGqHL9S9XGWLtPe9k9IEkC7JO3iQcBk4/s575/tacos_french-removebg-preview.png" alt="Soupe aux Raviolis de Bœuf">
+                        <h3>Raviolis de bœuf dans une soupe aigre-douce</h3>
+                        <p class="price">$4.29</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYOlmUaEsSAmm0ZyhyphenhyphenM68l2rGxTSXstyTK-ko5j_zR6-92szwL5L-t7MiFcNPEGYup4e4RdguuwXfU0fROOKH2mad6UwtInJos3z1sdHKhyGJZI6r8SCejR6pt9-Xpk0-P0oZh3TbGsLPTdTSMf5j7Rl_grolAC1hjTfdDOeJS5C7sx5LDtqvzbn9baHHV/s660/tacos.png" alt="Soupe aux Pâtes au Poulet">
+                        <h3>Pâtes au poulet dans une soupe aigre-douce</h3>
+                        <p class="price">$1.59</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDy9w7R1vsB7p7f4tnX2AyzeWk2weyah4lJa0l6qoKdqLw9oO59qmOctyn8BiHdmKMVMOHmnCJ1V2yYtkwi17DGosV19uty8IO4C9PiYoCdBYCGNJL-5fQbYA3C_iTqROcCnsc3zJtuBfPx8aL_OyPvrPt1vzSnGqHL9S9XGWLtPe9k9IEkC7JO3iQcBk4/s575/tacos_french-removebg-preview.png" alt="Nouilles Saines">
+                        <h3>Nouilles saines avec feuilles d'épinards</h3>
+                        <p class="price">$5.29</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYOlmUaEsSAmm0ZyhyphenhyphenM68l2rGxTSXstyTK-ko5j_zR6-92szwL5L-t7MiFcNPEGYup4e4RdguuwXfU0fROOKH2mad6UwtInJos3z1sdHKhyGJZI6r8SCejR6pt9-Xpk0-P0oZh3TbGsLPTdTSMf5j7Rl_grolAC1hjTfdDOeJS5C7sx5LDtqvzbn9baHHV/s660/tacos.png" alt="Riz Frit">
+                        <h3>Riz frit épicé avec omelette</h3>
+                        <p class="price">$2.99</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDy9w7R1vsB7p7f4tnX2AyzeWk2weyah4lJa0l6qoKdqLw9oO59qmOctyn8BiHdmKMVMOHmnCJ1V2yYtkwi17DGosV19uty8IO4C9PiYoCdBYCGNJL-5fQbYA3C_iTqROcCnsc3zJtuBfPx8aL_OyPvrPt1vzSnGqHL9S9XGWLtPe9k9IEkC7JO3iQcBk4/s575/tacos_french-removebg-preview.png" alt="Nouilles de Fruits de Mer">
+                        <h3>Nouilles instantanées épicées avec omelette spéciale</h3>
+                        <p class="price">$4.59</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYOlmUaEsSAmm0ZyhyphenhyphenM68l2rGxTSXstyTK-ko5j_zR6-92szwL5L-t7MiFcNPEGYup4e4RdguuwXfU0fROOKH2mad6UwtInJos3z1sdHKhyGJZI6r8SCejR6pt9-Xpk0-P0oZh3TbGsLPTdTSMf5j7Rl_grolAC1hjTfdDOeJS5C7sx5LDtqvzbn9baHHV/s660/tacos.png" alt="Nouilles Instantanées">
+                        <h3>Nouilles instantanées sautées avec sauce spéciale</h3>
+                        <p class="price">$3.29</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="sushi" class="container">
+
+                <h1 style="padding-top: 100px;">Nos Plats de Sushi les Plus Populaires</h1>
+                <div class="grid-container">
+                   
+                    <div class="card">
+                        <img src="https://example.com/sushi1.png" alt="Sushi au Saumon">
+                        <h3>Sushi au saumon frais</h3>
+                        <p class="price">$3.29</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://example.com/sushi2.png" alt="Sushi au Thon">
+                        <h3>Sushi au thon épicé</h3>
+                        <p class="price"><span class="sale-price">$4.00</span> $3.79</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                   
+                    <div class="card">
+                        <img src="https://example.com/sushi3.png" alt="Sushi aux Crevettes">
+                        <h3>Sushi aux crevettes grillées</h3>
+                        <p class="price">$5.49</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://example.com/sushi4.png" alt="Sushi au Poulet">
+                        <h3>Sushi au poulet teriyaki</h3>
+                        <p class="price">$2.99</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://example.com/sushi5.png" alt="Sushi aux Légumes">
+                        <h3>Sushi aux légumes frais</h3>
+                        <p class="price">$4.29</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://example.com/sushi6.png" alt="Sushi au Thon Spécial">
+                        <h3>Sushi au thon spécial avec sauce</h3>
+                        <p class="price">$6.99</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://example.com/sushi7.png" alt="Sushi Tempura">
+                        <h3>Sushi tempura croustillant</h3>
+                        <p class="price">$3.49</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://example.com/sushi8.png" alt="Sushi au Crabe">
+                        <h3>Sushi au crabe et avocat</h3>
+                        <p class="price">$4.79</p>
+                        <div class="rating">★★★★★</div>
+                        
+                    </div>
+                </div>
+            </div>
+                        
+</center>
+
+<script>
+    document.querySelectorAll('.menu a').forEach(link => {
+        link.addEventListener('click', function() {
+            document.querySelectorAll('.menu a').forEach(link => link.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>
